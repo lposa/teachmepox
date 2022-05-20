@@ -9,7 +9,7 @@ import LetsTalk from "./pages/LetsTalk";
 import Classes from "./pages/Classes";
 import Admin from "./pages/Admin";
 
-function App() {
+export default function App() {
   return (
     <>
       <Routes>
@@ -24,5 +24,3 @@ function App() {
     </>
   );
 }
-
-export default App;

@@ -5,7 +5,7 @@ import AdminMenu from "../components/AdminComponents/AdminMenu";
 import { fetchSchedule } from "../services/fetchEndpoints";
 import { NavLink } from "react-router-dom";
 
-function Admin() {
+export default function Admin() {
   const [schedules, setSchedules] = useState([]);
   const [activePage, setActivePage] = useState("overview");
   const [calendarDate, setCalendarDate] = useState(new Date());
@@ -54,5 +54,3 @@ function Admin() {
     </>
   );
 }
-
-export default Admin;

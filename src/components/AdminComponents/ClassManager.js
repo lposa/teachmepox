@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ClassManager({ schedule, activePage }) {
+export default function ClassManager({ schedule, activePage }) {
   return (
     <>
       <div
@@ -20,5 +20,3 @@ function ClassManager({ schedule, activePage }) {
     </>
   );
 }
-
-export default ClassManager;

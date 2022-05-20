@@ -1,6 +1,6 @@
 import React from "react";
 
-function PulloutDiv({
+export default function PulloutDiv({
   classSelect,
   contentHeader,
   contentParagraph,
@@ -18,5 +18,3 @@ function PulloutDiv({
     </>
   );
 }
-
-export default PulloutDiv;

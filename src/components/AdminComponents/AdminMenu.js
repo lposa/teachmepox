@@ -1,6 +1,6 @@
 import React from "react";
 
-function AdminMenu({ activePage, setActivePage }) {
+export default function AdminMenu({ activePage, setActivePage }) {
   return (
     <ul className="admin-menu-ul">
       <li
@@ -18,5 +18,3 @@ function AdminMenu({ activePage, setActivePage }) {
     </ul>
   );
 }
-
-export default AdminMenu;

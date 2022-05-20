@@ -2,7 +2,7 @@ import React from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
-function ScheduleDate({ calendarDate, setCalendarDate }) {
+export default function ScheduleDate({ calendarDate, setCalendarDate }) {
   return (
     <div>
       <Calendar
@@ -13,5 +13,3 @@ function ScheduleDate({ calendarDate, setCalendarDate }) {
     </div>
   );
 }
-
-export default ScheduleDate;

@@ -30,6 +30,5 @@ export async function fetchPostSchedule(schedule) {
         body: JSON.stringify(schedule),
     });
 
-    const schedules = await res.json();
     console.log(schedule);
 }

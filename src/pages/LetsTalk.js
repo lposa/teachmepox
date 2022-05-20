@@ -1,12 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-function LetsTalk() {
+export default function LetsTalk() {
   return (
     <div>
       <Navbar />
     </div>
   );
 }
-
-export default LetsTalk;

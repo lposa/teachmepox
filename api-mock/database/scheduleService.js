@@ -1,4 +1,4 @@
-const schedule = [{
+export const schedule = [{
         id: 0,
         timeslot: "8-9h",
         available: true,
@@ -80,5 +80,3 @@ const schedule = [{
         subject: "",
     },
 ];
-
-module.exports = { schedule };

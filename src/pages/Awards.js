@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 
-function Awards() {
+export default function Awards() {
   function stars() {
     let count = 50;
     let scene = document.querySelector(".scene");
@@ -46,5 +46,3 @@ function Awards() {
     </div>
   );
 }
-
-export default Awards;

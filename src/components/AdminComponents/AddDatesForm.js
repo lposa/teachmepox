@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { postSchedule } from "../../services/scheduleService";
 
-function AddDatesForm({ activePage }) {
+export default function AddDatesForm({ activePage }) {
   const [textInput, setTextInput] = useState({
     date: "",
     timeslot: "",
@@ -63,5 +63,3 @@ function AddDatesForm({ activePage }) {
     </div>
   );
 }
-
-export default AddDatesForm;

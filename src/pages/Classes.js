@@ -4,7 +4,7 @@ import Schedule from "../components/Schedule";
 import { fetchSchedule } from "../services/fetchEndpoints";
 import { createBooking } from "../services/scheduleService";
 
-function Classes() {
+export default function Classes() {
   const [calendarDate, setCalendarDate] = useState(new Date());
   const [timeslots, setTimeslots] = useState([]);
 
@@ -46,5 +46,3 @@ function Classes() {
     </div>
   );
 }
-
-export default Classes;

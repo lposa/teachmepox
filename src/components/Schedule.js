@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ScheduleBubble from "./ScheduleBubble";
 import ScheduleDate from "./ScheduleDate";
 
-function Schedule({
+export default function Schedule({
   timeslots,
   calendarDate,
   setCalendarDate,
@@ -39,5 +39,3 @@ function Schedule({
     </div>
   );
 }
-
-export default Schedule;

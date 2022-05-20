@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import DropDownMenu from "./DropDownMenu";
 
-function ScheduleBubble({
+export default function ScheduleBubble({
   timeslot,
   available,
   openModal,
@@ -128,5 +128,3 @@ const customModal = {
     width: "300px",
   },
 };
-
-export default ScheduleBubble;

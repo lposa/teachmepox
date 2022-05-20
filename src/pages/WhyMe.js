@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import PulloutDiv from "../components/PulloutDiv";
 import finger from "../finger-png-43096.png";
 
-function WhyMe() {
+export default function WhyMe() {
   const [textInput, setTextInput] = useState("");
   const [answer, setAnswer] = useState(false);
 
@@ -339,5 +339,3 @@ function WhyMe() {
     </div>
   );
 }
-
-export default WhyMe;

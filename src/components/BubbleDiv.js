@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import placeholderimg from "../placeholder.jpg";
 
-function BubbleDiv({ title, imgsrc, handleOpenModal }) {
+export default function BubbleDiv({ title, imgsrc, handleOpenModal }) {
   return (
     <BubbleWrapper onClick={handleOpenModal}>
       <Bubble>
@@ -37,5 +37,3 @@ const BubbleWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
-export default BubbleDiv;
