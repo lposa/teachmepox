@@ -33,5 +33,3 @@ export async function fetchPostSchedule(schedule) {
     const schedules = await res.json();
     console.log(schedule);
 }
-
-module.exports = { fetchSchedule, updateSchedule, fetchPostSchedule };
