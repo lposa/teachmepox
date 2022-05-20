@@ -1,11 +1,11 @@
-async function fetchSchedule() {
+export async function fetchSchedule() {
     const res = await fetch("https://teachmepox.herokuapp.com/schedule");
     const data = await res.json();
 
     return data;
 }
 
-async function updateSchedule(id, newBooking) {
+export async function updateSchedule(id, newBooking) {
     const res = await fetch(
         `https://teachmepox.herokuapp.com/updateschedule${id}`, {
             method: "PUT",
@@ -20,7 +20,7 @@ async function updateSchedule(id, newBooking) {
     console.table("fetch endpoints: ", booking);
 }
 
-async function fetchPostSchedule(schedule) {
+export async function fetchPostSchedule(schedule) {
     const res = await fetch("https://teachmepox.herokuapp.com/admin/addDates", {
         method: "POST",
         headers: {

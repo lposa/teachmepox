@@ -1,12 +1,4 @@
-import {
-    postBooking,
-    updateSchedule,
-    fetchPostSchedule,
-} from "./fetchEndpoints";
-
-export async function addBooking(booking) {
-    await postBooking(booking);
-}
+import { updateSchedule, fetchPostSchedule } from "./fetchEndpoints";
 
 export async function createBooking(id, booking) {
     await updateSchedule(id, booking);
