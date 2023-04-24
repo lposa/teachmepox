@@ -15,11 +15,12 @@ export default function Classes() {
   useEffect(() => {
     const getSchedule = async () => {
       const schedule = await fetchSchedule();
-      const filteredSchedule = schedule.filter((s) => date <= s.date); //show only todays or future bookings
+      const filteredSchedule = schedule.filter((s) => date => s.date); //show only todays or future bookings
+      console.log("Filtered Schedules are",filteredSchedule)
       setTimeslots(filteredSchedule);
     };
     getSchedule();
-  }, []);
+  }, [date]);
 
   const createNewBooking = async (id, newBooking) => {
     await createBooking(id, newBooking);

@@ -96,7 +96,11 @@
         flex-direction: column;
     }
 }
-
+.hero-right img{
+    @media screen and (max-width:768px){
+        width:250px;
+    }
+}
 .hero-left {
     width: 500px;
     @media screen and (max-width: 768px) {
@@ -118,16 +122,23 @@
     h1 {
         font-weight: bold;
         font-size: 3em;
+        @media screen and (max-width: 350px) {
+            font-size:2em;
+        }
     }
     div {
         display: flex;
         flex-direction: row;
         align-items: center;
         align-content: center;
+        flex-wrap:wrap;
         p {
             font-size: 1em;
             font-weight: bold;
+            word-wrap: break-word;
+            white-space: normal;
         }
+
     }
 }
 
@@ -161,6 +172,12 @@
     align-items: center;
     justify-items: center;
     row-gap: 50px;
+    @media screen and (max-width:1200px){
+        grid-template-columns: repeat(4, 25%);
+    }
+    @media screen and (max-width:1000px){
+        grid-template-columns: repeat(3, 25%);
+    }
     @media screen and (max-width: 768px) {
         grid-template-columns: 100%;
     }
@@ -924,7 +941,7 @@ $animationtime: 1.5s;
     justify-content: center;
     align-items: flex-start;
     box-shadow: 0 0 10px #e5e5e5;
-    width: 300px;
+    width: 250px;
     padding: 10px;
     margin: 20px 0;
     border-radius: 10px;
@@ -941,16 +958,26 @@ $animationtime: 1.5s;
     .booking-available {
         color: green;
     }
+
+    @media only screen and (max-width: 1270px) {
+        width: 200px;
+    }
 }
 
 .admin-card-container {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     justify-content: center;
     justify-items: center;
     align-items: center;
     column-gap: 10px;
     row-gap: 10px;
+    @media only screen and (max-width: 1200px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
 .admin-menu-container {

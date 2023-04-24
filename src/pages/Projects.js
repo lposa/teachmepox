@@ -3,11 +3,13 @@ import Navbar from "../components/Navbar";
 import BubbleDiv from "../components/BubbleDiv";
 import bookshelfappimg from "../Logo1.png";
 import gabilogo from "../gabilogo.png";
+import ritualslogo from "../Rituals_Cosmetics_logo.png"
+import intersportlogo from "../InterSport-Logo.png"
 import BasicModal from "../components/Modal";
 
 export default function Projects() {
   const [openModal, setOpenModal] = useState(false);
-  const [modalContent, setModalContent] = useState();
+
 
   const handleOpenModal = () => {
     setOpenModal(true);
@@ -17,16 +19,7 @@ export default function Projects() {
     setOpenModal(false);
   };
 
-  const contentJSON = [
-    {
-      id: 0,
-      content: {
-        img: "https://www.danimontesinos.com/wp-content/uploads/2020/11/5da9e313c17e282a8b3e2ebf_logo-bugaboo.png",
-        headerText: "Bugaboo Website Redesign & Testing",
-        text: "I can't talk a lot about this project since it's not my personal project but belongs to Emakina. This was my first ever CRO project, where I learned to inject JS and CSS into an existing website to do a redesign. The tricky part is that you can only work with what's on the website, and you are advised against creating new elements. After creating the redesign, we used Google Optimize to create A/B test and see if the redesign brings in more customers",
-      },
-    },
-  ];
+
 
   var content;
 
@@ -55,6 +48,23 @@ export default function Projects() {
             title={"GabiDoo E-Shop @myself"}
             imgsrc={gabilogo}
             handleOpenModal={handleOpenModal}
+          />
+          <BubbleDiv
+              title={"Bugaboo Salesforce FE @emakina"}
+              imgsrc={
+                "https://www.danimontesinos.com/wp-content/uploads/2020/11/5da9e313c17e282a8b3e2ebf_logo-bugaboo.png"
+              }
+              handleOpenModal={handleOpenModal}
+          />
+          <BubbleDiv
+              title={"InterSport Salesforce FE @emakina"}
+              imgsrc={intersportlogo}
+              handleOpenModal={handleOpenModal}
+          />
+          <BubbleDiv
+              title={"Rituals React/React Native @emakina"}
+              imgsrc={ritualslogo}
+              handleOpenModal={handleOpenModal}
           />
         </div>
       </div>

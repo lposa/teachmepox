@@ -16,7 +16,7 @@ export default function WhyMe() {
     const pulloutUp = document.querySelector(".pullout-up");
     const pulloutLeft = document.querySelector(".pullout-left");
     const pulloutBottom = document.querySelector(".pullout-bottom");
-    if (textInput.toLocaleLowerCase() == "star wars") {
+    if (textInput.toLocaleLowerCase() === "star wars") {
       setAnswer(true);
     } else {
       setAnswer(false);
@@ -110,7 +110,7 @@ export default function WhyMe() {
       fire.setAttribute("style", "opacity:0");
       const sheldon = document.querySelector(".sheldon-container");
       sheldon.setAttribute("style", "opacity:100%;");
-    }, 10000);
+    }, 5000);
   }
 
   const firstCardBody = (

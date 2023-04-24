@@ -5,10 +5,11 @@ import AdminMenu from "../components/AdminComponents/AdminMenu";
 import { fetchSchedule } from "../services/fetchEndpoints";
 import { NavLink } from "react-router-dom";
 
+
 export default function Admin() {
   const [schedules, setSchedules] = useState([]);
   const [activePage, setActivePage] = useState("overview");
-  const [calendarDate, setCalendarDate] = useState(new Date());
+
 
   useEffect(() => {
     const getSchedule = async () => {
@@ -16,11 +17,11 @@ export default function Admin() {
       setSchedules(schedule);
     };
     getSchedule();
+
+
   });
 
-  var date = `${calendarDate.getDate()}/${
-    calendarDate.getMonth() + 1
-  }/${calendarDate.getFullYear()}`; //create date
+
 
   return (
     <>
@@ -36,8 +37,9 @@ export default function Admin() {
       </div>
 
       <div className="admin-card-container">
+
         {schedules
-          .filter((s) => date <= s.date)
+
           .map((schedule) => {
             return (
               <ClassManager

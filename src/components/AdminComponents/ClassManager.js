@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React  from "react";
 
 export default function ClassManager({ schedule, activePage }) {
+
   return (
     <>
       <div
         className={activePage === "overview" ? "admin-card-overview" : "hidden"}
       >
+
         <p id="card-date">Date: {schedule.date}</p>
         <p id="card-date">Time: {schedule.timeslot}</p>
         <p>Name: {schedule.name}</p>

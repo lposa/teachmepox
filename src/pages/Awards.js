@@ -39,6 +39,7 @@ export default function Awards() {
         <div className="rocket">
           <img
             className="rocketimg"
+            alt="rocketimg"
             src="https://www.clipartmax.com/png/full/112-1123035_rocket-rocket-icon-png.png"
           />
         </div>

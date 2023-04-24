@@ -4,7 +4,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import styled from "styled-components";
+
 
 const options = [
   "Front End Development",
@@ -33,7 +33,7 @@ export default function SimpleListMenu({ setSubject }) {
 
   useEffect(() => {
     setSubject(options[selectedIndex ? selectedIndex : 0]);
-  }, [selectedIndex]);
+  }, [selectedIndex,setSubject]);
 
   return (
     <div>

@@ -1,5 +1,5 @@
 export async function fetchSchedule() {
-    const res = await fetch("https://teachmepox.herokuapp.com/schedule");
+    const res = await fetch("http://localhost:8000/schedule");
     const data = await res.json();
 
     return data;
@@ -7,7 +7,7 @@ export async function fetchSchedule() {
 
 export async function updateSchedule(id, newBooking) {
     const res = await fetch(
-        `https://teachmepox.herokuapp.com/updateschedule${id}`, {
+        `http://localhost:8000/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -21,7 +21,7 @@ export async function updateSchedule(id, newBooking) {
 }
 
 export async function fetchPostSchedule(schedule) {
-    const res = await fetch("https://teachmepox.herokuapp.com/admin/addDates", {
+    const res = await fetch("http://localhost:8000/admin/addDates", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -29,6 +29,5 @@ export async function fetchPostSchedule(schedule) {
         },
         body: JSON.stringify(schedule),
     });
-
-    console.log(schedule);
+console.log(res.json())
 }

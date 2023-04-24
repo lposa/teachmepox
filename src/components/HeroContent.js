@@ -5,7 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import leoimage from "../Leonard Poša-linkedin.png";
-import { NavLink } from "react-router-dom";
+
 
 export default function HeroContent() {
   return (
@@ -31,21 +31,21 @@ export default function HeroContent() {
           <a
             className="link"
             href="https://www.facebook.com/pox1997/"
-            target="_blank"
+
           >
             <FacebookRoundedIcon sx={{ fontSize: 30 }} />
           </a>
           <a
             className="link"
             href="https://www.instagram.com/pox97/"
-            target="_blank"
+
           >
             <InstagramIcon sx={{ fontSize: 30 }} />
           </a>
           <a
             className="link"
             href="https://www.linkedin.com/in/leonard-posa-1521971a7/?originalSubdomain=rs"
-            target="_blank"
+
           >
             <LinkedInIcon sx={{ fontSize: 30 }} />
           </a>

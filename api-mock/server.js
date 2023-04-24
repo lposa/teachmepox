@@ -1,9 +1,10 @@
-const express = require("express");
+import cors from "cors"
+import express from 'express'
+import {schedule} from "./database/scheduleService.js"
+import nodemailer from "nodemailer"
+
 const app = express();
-const cors = require("cors");
-const { schedule } = require("./database/scheduleService");
-var nodemailer = require("nodemailer");
-const { ScheduleSharp } = require("@mui/icons-material");
+
 var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {

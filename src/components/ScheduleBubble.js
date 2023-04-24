@@ -1,4 +1,4 @@
-import { TimesOneMobiledataSharp } from "@mui/icons-material";
+
 import React, { useState } from "react";
 import Modal from "react-modal";
 import DropDownMenu from "./DropDownMenu";
@@ -6,11 +6,8 @@ import DropDownMenu from "./DropDownMenu";
 export default function ScheduleBubble({
   timeslot,
   available,
-  openModal,
   definitiveDate,
-
   timeslotId,
-
   createNewBooking,
 }) {
   const [modalIsOpen, setIsOpen] = useState(false);
